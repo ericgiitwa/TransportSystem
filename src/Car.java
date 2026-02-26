@@ -1,11 +1,11 @@
-public class car {
+public class Car {
         private String brand;
         private String model;
         private String regPlate;
         private String color;
         private int capacity;
 
-        public car(String brand, String model, String regPlate, String color, int capacity) {
+        public Car(String brand, String model, String regPlate, String color, int capacity) {
             this.brand = brand;
             this.model = model;
             this.regPlate = regPlate;
