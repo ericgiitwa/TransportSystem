@@ -1,3 +1,5 @@
+import java.net.IDN;
+
 public abstract class baseUser implements userActions{
     private String Name;
     private String phoneNumber;
@@ -24,10 +26,7 @@ public abstract class baseUser implements userActions{
         System.out.println(Name + "Is currently at location X");
     }
 
-    @Override
-    public void confirmRide(){
-        System.out.print("your driver is:" + Name + "and he is driving  A CAR" );
-    }
+
 
 
     @Override

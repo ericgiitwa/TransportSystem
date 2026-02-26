@@ -1,20 +1,26 @@
 public class driver extends baseUser{
-    private int IDNumber;
-    private int DLNumber; // drivers licence
     private boolean Available;
+    private car mycar;
+    private double rating;
 
-    public driver(String Name, String phoneNumber, int age){
+    public driver(String Name, String phoneNumber,int IDNumber, int age, double rating, car car){
         super(Name, phoneNumber, age);
-        this.IDNumber = IDNumber;
-        this.DLNumber = DLNumber;
+        this.rating = rating;
+        this.mycar = car;
     }
-    public int getIDNumber(){return IDNumber;}
-    public int getDLNumber(){return DLNumber;}
+
     public boolean getAvailable(){return Available;}
 
-    public void setIDNumber(int IDNumber){this.IDNumber = IDNumber;}
-    public void setDLNumber(int DLNumber){this.DLNumber = DLNumber;}
     public void setAvailable(int DLNumber){this.Available = Available;}
+
+    public void displayDriver() {
+        System.out.println("Driver: " + getName() + "Rating: " + rating);
+        System.out.println("Vehicle: " + mycar.getCarDetails());
+    }
+
+    public void requestPassengerInfo(passenger p){
+        System.out.println(p.displayPassenger());
+    }
 
 
 
