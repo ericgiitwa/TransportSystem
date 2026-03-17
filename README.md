@@ -1,2 +1,5 @@
-This is a creation of a Transportation app where users can register as drivers or passengers
-<img width="307" height="104" alt="image" src="https://github.com/user-attachments/assets/219f8788-a54b-4840-9fac-05bcf83f3cf1" />
+# ABOUT MY PROJECT.
+It is a Java-based application developed as a class project, focusing on the core logic and functionalities required for a transport system.
+
+* Vehicle Management: managing various types of vehicles.
+* User Management: Handling information for users, potentially drivers and/or passengers.
