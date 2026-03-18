@@ -27,7 +27,7 @@ public class Car {
             String regPlate = scanner.nextLine();
             System.out.println("INPUT YOUR VEHICLES color:");
             String color = scanner.nextLine();
-            System.out.println("your vehicle details are: "+color + " " + brand + model + " " + regPlate + "");
+            System.out.println("your vehicle details are: "+color + " " + brand + model + " " + regPlate);
         }
         catch (InputMismatchException e) {}
         finally{
@@ -35,9 +35,7 @@ public class Car {
         }
 
     }
-//        public String getCarDetails() {
-//            return color + " " + brand + model + " " + regPlate + "";
-//        }
+
     }
 
 
