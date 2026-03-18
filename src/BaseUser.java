@@ -1,15 +1,28 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public abstract class BaseUser implements UserActions {
     private String name;
     private String phoneNumber;
     private int age;
     private String currentLocation = "Unknown";
 
-    public BaseUser(String name, String phoneNumber, int age) {
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.age = age;
-    }
+    public static void setProfile(){
+        Scanner scanner = new Scanner(System.in);
+        try{
+            System.out.println("ENTER YOUR NAME");
+            String name = scanner.nextLine();
+            System.out.println("ENTER YOUR PHONE NUMBER");
+            String phoneNumber = scanner.nextLine();
+            System.out.println("ENTER YOUR AGE");
+            String age = scanner.nextLine();
 
+        }
+        catch(InputMismatchException e){}
+        finally {
+            scanner.close();
+        }
+    }
     public String getName() { return name; }
 
     @Override
